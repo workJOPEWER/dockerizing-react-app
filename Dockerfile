@@ -7,7 +7,7 @@ COPY package*.json ./
 RUN npm install
 RUN npm install react-scripts -g
 
-COPY ./ app/
+COPY ./ /app/
 
 EXPOSE 8080
 CMD ["npm", "start"]
